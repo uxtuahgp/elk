@@ -25,7 +25,7 @@ output {
     index => "logstash-%{+YYYY.MM.dd}"
   }
 }
-```
+```  
 В результате получился такой docker-compose.yml  
 ```
 version: "2.2"
@@ -263,4 +263,6 @@ KIBANA_PORT=5601
 
 MEM_LIMIT=1073741824
 
-```
+```  
+![docker compose ps output](containers.jpg)  
+![Kibana interface](kibana.jpg)  
