@@ -5,7 +5,7 @@
 При подъеме столкнулся с отказом эластика запускаться - нашел решение с vm.max_map_count = 262144  
 Посмотрел имеющуюся информацию по настройке Filebeat и Logstash и честно подсмотрев в каталог help добавил в compose запуск контейнеров logstash и filebeat.
 В help либо умышленно были допущены ошибки, либо параметры устарели.  
-В итоге исправил в filebeat.yml  
+В итоге исправил тип container на filestream в filebeat.yml  
 ```  
 filebeat.inputs:
   - type: filestream
@@ -13,7 +13,7 @@ filebeat.inputs:
     paths:
       - '/var/lib/docker/containers/*/*.log'
 ```  
-А так же в logstash.yml  
+А так же добавил api. в logstash.yml  
 ```  
 api.http.host: "0.0.0.0"
 ```  
