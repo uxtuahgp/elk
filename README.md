@@ -32,7 +32,7 @@ api.http.host: "0.0.0.0"
     image: logstash:8.7.0
     container_name: logstash
     environment:
-      - "LS_JAVA_OPTS=-Xms2G -Xmx2G"
+      - "LS_JAVA_OPTS=-Xms1G -Xmx1G"
 ```
 Проблема решена.  
 ![docker compose ps output](containers2.jpg)  
