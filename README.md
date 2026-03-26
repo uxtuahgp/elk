@@ -36,5 +36,11 @@ api.http.host: "0.0.0.0"
 ```
 Проблема решена.  
 ![docker compose ps output](containers2.jpg)  
+
+### Task 2 ###  
+На слайде видно, что в интерфейсе появился индекс  
 ![Kibana interface](kibana2.jpg)  
+Создал Data View DV-logstash  
+Попробовал в Discovery использовать фильтры  
+![Data view filter](dv.jpg)  
 
